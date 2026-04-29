@@ -13,13 +13,23 @@
     <?php
     // aqui criar o array de mulheres
     $arrayMulheres = [
-        ['Ada Lovelace', 'ada-lovelace.webp', 'Considerada a primeira programadora da história, Ada Lovelace escreveu o primeiro algoritmo destinado a ser processado por uma máquina, a Máquina Analítica de Charles Babbage. Ela é reconhecida por sua visão pioneira sobre o potencial da computação.'],
-        ['Dorothy Vaughan', 'dorothy-vaughan.webp', 'Dorothy Vaughan foi uma matemática e programadora que liderou o grupo de programadoras negras na NASA. Ela foi uma das primeiras a usar computadores eletrônicos e ajudou a desenvolver métodos para resolver problemas de física.'],
-        ['Grace Hopper', 'grace-hopper.webp', 'Grace Hopper foi uma almirante da Marinha dos Estados Unidos e uma das primeiras programadoras de computadores. Ela desenvolveu o primeiro compilador e popularizou a ideia de linguagens de programação de alto nível, como COBOL.'],
-        ['Margaret Hamilton', 'margaret-hamilton.webp', 'Margaret Hamilton foi uma cientista da computação e engenheira de software que liderou a equipe responsável pelo desenvolvimento do software de voo para as missões Apollo. Seu trabalho foi crucial para o sucesso das missões lunares.'],
-        ['Marissa Mayer', 'marissa-mayer.webp', 'Marissa Mayer é uma engenheira de software e empresária que foi a primeira mulher a se tornar CEO do Yahoo!. Ela teve um papel fundamental no desenvolvimento de produtos como o Google Search e o Google Maps durante seu tempo na empresa.']
+        ['Ada Lovelace', 'Mulheres TI\ada-lovelace.webp', 'Considerada a primeira programadora da história, Ada Lovelace escreveu o primeiro algoritmo destinado a ser processado por uma máquina, a Máquina Analítica de Charles Babbage. Ela é reconhecida por sua visão pioneira sobre o potencial da computação.'],
+        ['Dorothy Vaughan', 'Mulheres TI\dorothy-vaughan.png', 'Dorothy Vaughan foi uma matemática e programadora que liderou o grupo de programadoras negras na NASA. Ela foi uma das primeiras a usar computadores eletrônicos e ajudou a desenvolver métodos para resolver problemas de física.'],
+        ['Grace Hopper', 'Mulheres TI\grace-hopper.webp', 'Grace Hopper foi uma almirante da Marinha dos Estados Unidos e uma das primeiras programadoras de computadores. Ela desenvolveu o primeiro compilador e popularizou a ideia de linguagens de programação de alto nível, como COBOL.'],
+        ['Margaret Hamilton', 'Mulheres TI/margareth-hamilton.webp', 'Margaret Hamilton foi uma cientista da computação e engenheira de software que liderou a equipe responsável pelo desenvolvimento do software de voo para as missões Apollo. Seu trabalho foi crucial para o sucesso das missões lunares.'],
+        ['Marissa Mayer', 'Mulheres TI\marissa-mayer1.png', 'Marissa Mayer é uma engenheira de software e empresária que foi a primeira mulher a se tornar CEO do Yahoo!. Ela teve um papel fundamental no desenvolvimento de produtos como o Google Search e o Google Maps durante seu tempo na empresa.']
     ];
     ?>
+
+    <div class="galeria">
+            <?php foreach ($arrayMulheres as $mulher) { ?>
+        <div class="item">
+            <img src="<?php echo $mulher[1]; ?>">
+            <h3><?php echo $mulher[0]; ?></h3>
+            <p><?php echo $mulher[2]; ?></p>
+        </div>
+        <?php } ?>
+    </div>
 
     <div class="galeria">
         
@@ -34,7 +44,7 @@
             <h3><?php echo $arrayMulheres[1][0]; ?></h3>
             <p><?php echo $arrayMulheres[1][2]; ?></p>
         </div>
-        <div class="item">
+        <div class="item">  
             <img src="<?php echo $arrayMulheres[2][1]; ?>">
             <h3><?php echo $arrayMulheres[2][0]; ?></h3>
             <p><?php echo $arrayMulheres[2][2]; ?></p>
@@ -50,7 +60,6 @@
             <p><?php echo $arrayMulheres[4][2]; ?></p>
         </div>
     </div>
-
     
 </body>
 </html> 
