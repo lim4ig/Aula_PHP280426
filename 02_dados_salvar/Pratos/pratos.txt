@@ -1,0 +1,1 @@
+Nome: Lasanha,	Código: 077077077,	Categoria: Prato Principal,	Vegetariano: nao,	Vegano: nao
