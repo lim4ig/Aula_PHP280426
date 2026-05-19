@@ -12,4 +12,5 @@ fwrite($arquivo, "Cidade: $cidade,\t");
 fwrite($arquivo, "Estado: $estado,\t");
 fwrite($arquivo, "Fumante: $fumante\n");
 fclose($arquivo);
+header('Location: pacientes_formulario.php');
 ?>

@@ -1,0 +1,3 @@
+Artista: AAAA,	Nome do Álbum: AAA,	Ano de Lançamento: 1999
+Artista: aaaaaaaaaaaaaaaa,	Nome do Álbum: aaaaaaaaaaaaaaaa,	Ano de Lançamento: 2000
+Artista: bbbbbb,	Nome do Álbum: bbbbbb,	Ano de Lançamento: 2000

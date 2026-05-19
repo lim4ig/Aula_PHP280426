@@ -8,4 +8,5 @@ fwrite($arquivo, "Evento: $evento,\t");
 fwrite($arquivo, "Data: $data,\t");
 fwrite($arquivo, "Docente: $docente\n");
 fclose($arquivo);
+header('Location: eventos_formulario.php');
 ?>

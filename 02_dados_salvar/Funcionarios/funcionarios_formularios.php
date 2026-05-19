@@ -64,6 +64,18 @@
     </div>
 
     </form>
+
+    <hr>
+        <h2>Lista de Funcionários</h2>
+        <?php
+        $arquivo = "funcionarios.txt";
+        $arquivo_aberto = fopen($arquivo, "r");
+        while (!feof($arquivo_aberto)) {
+            $linha = fgets($arquivo_aberto);
+            echo "$linha<br>";
+        }
+        fclose($arquivo_aberto);
+        ?>
     </div>
 </body>
 </html>

@@ -16,4 +16,5 @@ fwrite($arquivo, "Casado: $casado,\t");
 fwrite($arquivo, "Necessita de ajuda: $ajuda,\t");
 fwrite($arquivo, "Descrição: $descricao\n");
 fclose($arquivo);
+header('Location: funcionarios_formularios.php');
 ?>

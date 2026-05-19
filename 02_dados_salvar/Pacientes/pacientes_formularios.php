@@ -52,6 +52,18 @@
         <input type="submit" value="Salvar" class="botao">
         <input type="reset" value="Limpar" class="botao">
     </form>
+
+    <hr>
+        <h2>Lista de Pacientes</h2>
+        <?php
+        $arquivo = "pacientes.txt";
+        $arquivo_aberto = fopen($arquivo, "r");
+        while (!feof($arquivo_aberto)) {
+            $linha = fgets($arquivo_aberto);
+            echo "$linha<br>";
+        }
+        fclose($arquivo_aberto);
+        ?>
 </div>
 </body>
 </html>

@@ -12,4 +12,5 @@ fwrite($arquivo, "Categoria: $categoria,\t");
 fwrite($arquivo, "Vegetariano: $vegetariano,\t");
 fwrite($arquivo, "Vegano: $vegano\n");
 fclose($arquivo);
+header('Location: pratos_formulario.php');
 ?>
